@@ -1,8 +1,8 @@
 export const site = {
   name: 'Archisman',
-  role: 'Full-stack developer',
+  role: 'From ideas to working products.',
   tagline:
-    'I build products at hackathons and turn them into things that actually work.',
+    'I design, build and ship real-world projects that solve problems and create impact.',
   about: [
     "I'm a software engineering undergrad who learns by building. Most of my projects start as hackathon ideas and grow into full apps, from AI agents to IoT safety systems.",
     "My go-to stack is React, Vite, Node/Express, and Supabase. I like clean UIs, solid backends, and shipping fast without breaking things.",

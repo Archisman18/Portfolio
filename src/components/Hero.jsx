@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="top" className="hero">
       <div className="container">
-        <p className="section-label reveal">Hello, I'm</p>
+        <p className="section-label reveal">Building ideas,<br />one commit at a time</p>
         <h1 className="hero-title reveal" style={{ animationDelay: '0.1s' }}>
           {site.name}.
         </h1>
@@ -20,7 +20,7 @@ export default function Hero() {
             View projects <ArrowUpRight size={16} />
           </a>
           <a href={site.resume} className="btn" download>
-            Resume <Download size={16} />
+            Let's connect <Download size={16} />
           </a>
         </div>
       </div>
