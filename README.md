@@ -1,16 +1,94 @@
-# React + Vite
+# Archisman Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive personal portfolio built with React and Vite. It presents Archisman's work, skills, hackathon experience, and contact links in a clean, focused single-page experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive navigation and hero section
+- About, skills, projects, hackathons, and contact sections
+- Project cards with technology tags and repository links
+- Smooth scrolling and lightweight reveal animations
+- Centralized content in `src/data/site.js` and `src/data/projects.js`
+- Production builds powered by Vite
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- JavaScript and JSX
+- Lucide React for icons
+- Oxlint for linting
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/Archisman18/Portfolio.git
+cd Portfolio
+npm install
+```
+
+### Development
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+Vite will print the local URL in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server with hot reload |
+| `npm run build` | Create an optimized production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Check the source with Oxlint |
+
+## Project Structure
+
+```text
+src/
+├── App.jsx                 # Page composition
+├── index.css               # Global styles and responsive layout
+├── main.jsx                # React entry point
+├── components/             # Page sections and navigation
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── Footer.jsx
+│   ├── Hackathons.jsx
+│   ├── Hero.jsx
+│   ├── Navbar.jsx
+│   ├── Projects.jsx
+│   └── Skills.jsx
+└── data/
+    ├── projects.js         # Projects, skills, and hackathon data
+    └── site.js              # Personal details and external links
+```
+
+## Customizing the Portfolio
+
+1. Update your name, role, biography, email, social links, and resume path in `src/data/site.js`.
+2. Add or edit projects, skills, and hackathons in `src/data/projects.js`.
+3. Add project images to `src/assets/` or `public/` and reference them from the project data.
+4. Adjust colors, spacing, typography, and responsive behavior in `src/index.css`.
+
+If you provide a resume, place it at `public/resume.pdf` so the hero download link works.
+
+## Production Build
+
+Build the site before deployment:
+
+```bash
+npm run build
+```
+
+The generated files are placed in `dist/` and can be deployed to any static hosting provider such as Vercel, Netlify, or GitHub Pages.
