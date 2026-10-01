@@ -5,10 +5,10 @@ export const site = {
     'I design, build and ship real-world projects that solve problems and create impact.',
   about: [
     "I'm a software engineering undergrad who learns by building. Most of my projects start as hackathon ideas and grow into full apps, from AI agents to IoT safety systems.",
-    "My go-to stack is React, Vite, Node/Express, and Supabase. I like clean UIs, solid backends, and shipping fast without breaking things.",
+    "My go-to stack is React, Vite, FastAPI, and Supabase. I like clean UIs, solid backends, and shipping fast without breaking things. I also enjoy exploring new technologies and frameworks, and I'm always looking for ways to improve my skills and learn new things.",
   ],
-  email: 'REPLACE@gmail.com',
+  email: 'duttaarchisman90@gmail.com',
   github: 'https://github.com/Archisman18',
-  linkedin: 'https://www.linkedin.com/in/REPLACE-ME',
+  linkedin: 'www.linkedin.com/in/archisman-dutta-',
   resume: '/resume.pdf',
 }
